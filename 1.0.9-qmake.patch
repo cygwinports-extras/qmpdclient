@@ -1,0 +1,20 @@
+--- origsrc/qmpdclient-1.0.9/qmpdclient.pro	2008-03-21 11:16:11.000000000 -0500
++++ src/qmpdclient-1.0.9/qmpdclient.pro	2009-02-27 11:15:08.202250000 -0600
+@@ -1,5 +1,7 @@
+ # installation prefix on *nix/osx
+-PREFIX = /usr/local
++isEmpty(PREFIX) {
++    PREFIX = /usr/local
++}
+ 
+ 
+ # Most people need not muck about below here
+@@ -189,7 +191,7 @@ unix {
+         SOURCES += src/qmpdclient_x11.cpp
+ 
+         # Check for dbus support
+-        contains(QT_CONFIG, qdbus){
++        contains(QT_CONFIG, dbus){
+             message(DBus notifier: enabled)
+             CONFIG += qdbus
+             SOURCES += src/notifications_dbus.cpp

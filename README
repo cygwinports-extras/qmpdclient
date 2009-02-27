@@ -1,0 +1,67 @@
+qmpdclient
+------------------------------------------
+QMPDClient is an easy-to-use Music Player Daemon (MPD) client for Qt4.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libQtCore4-4.4.3-2
+  libQtDBus4-4.4.3-2
+  libQtGui4-4.4.3-2
+  libX11_6-1.1.5-2
+  mpd-0.14.2-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  binutils-20080624-2
+  cygport-0.4.4-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  make-3.81-1
+
+Canonical website:
+  http://havtknut.tihlde.org/qmpdclient/
+
+Canonical download:
+  http://havtknut.tihlde.org/qmpdclient/files/
+  http://downloads.sourceforge.net/musicpd/
+
+-------------------------------------------
+
+Build instructions:
+  unpack qmpdclient-1.0.9-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./qmpdclient-1.0.9-X.cygport all
+
+This will create:
+  /usr/src/qmpdclient-1.0.9-X-src.tar.bz2
+  /usr/src/qmpdclient-1.0.9-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/qmpdclient.sh
+  /usr/bin/qmpdclient.exe
+  /usr/share/applications/qmpdclient.desktop
+  /usr/share/doc/qmpdclient-1.0.9/AUTHORS
+  /usr/share/doc/qmpdclient-1.0.9/COPYING
+  /usr/share/doc/qmpdclient-1.0.9/ChangeLog
+  /usr/share/doc/qmpdclient-1.0.9/INSTALL
+  /usr/share/doc/qmpdclient-1.0.9/README
+  /usr/share/icons/hicolor/16x16/apps/qmpdclient.png
+  /usr/share/icons/hicolor/22x22/apps/qmpdclient.png
+  /usr/share/icons/hicolor/48x48/apps/qmpdclient.png
+  /usr/share/icons/hicolor/64x64/apps/qmpdclient.png
+
+------------------
+
+Port Notes:
+
+----- version 1.0.9-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
