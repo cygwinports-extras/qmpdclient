@@ -2,7 +2,9 @@ inherit qt4-qmake
 
 DESCRIPTION="Qt4 client for the Music Player Daemon"
 HOMEPAGE="http://havtknut.tihlde.org/qmpdclient/"
-SRC_URI="mirror://sourceforge/musicpd/${P}.tar.gz"
+SRC_URI="http://dump.bitcheese.net/files/dedycec/${P}.tar.bz2"
+SRC_DIR=${PN}
+
 PATCH_URI="1.0.9-qmake.patch"
 
 CYGQMAKE4_ARGS="PREFIX=/usr"

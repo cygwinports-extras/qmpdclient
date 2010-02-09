@@ -1,4 +1,4 @@
 category: Audio KDE
-requires: libgcc1 libQtCore4 libQtDBus4 libQtGui4 libstdc++6 libX11_6 mpd
+requires: libgcc1 libQtCore4 libQtDBus4 libQtGui4 libQtNetwork4 libstdc++6 libX11_6 mpd
 sdesc: "Qt4 client for the Music Player Daemon"
 ldesc: "QMPDClient is an easy-to-use Music Player Daemon (MPD) client for Qt4."
