@@ -1,11 +1,19 @@
 --- origsrc/qmpdclient-1.0.9/qmpdclient.pro	2008-03-21 11:16:11.000000000 -0500
 +++ src/qmpdclient-1.0.9/qmpdclient.pro	2009-02-27 11:15:08.202250000 -0600
-@@ -1,5 +1,7 @@
+@@ -1,12 +1,11 @@
  # installation prefix on *nix/osx
 -PREFIX = /usr/local
 +isEmpty(PREFIX) {
 +    PREFIX = /usr/local
 +}
  
- 
  # Most people need not muck about below here
+ #!contains(QT_MAJOR_VERSION, 4):error(QMPDClient requires Qt 4)
+-CONFIG += qt debug
+-
+-# addition ldflags for release build
+-QMAKE_LFLAGS_RELEASE += -O2 -g0 -s
++CONFIG += qt
+ 
+ # CONFIG -= debug # Needed to avoid console on win32
+ TEMPLATE = app
