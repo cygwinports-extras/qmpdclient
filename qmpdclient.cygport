@@ -2,12 +2,12 @@ inherit qt4-qmake
 
 NAME="qmpdclient"
 VERSION=1.2.2
-RELEASE=1
+RELEASE=2
 CATEGORY="Audio"
 SUMMARY="Qt client for the Music Player Daemon"
 DESCRIPTION="QMPDClient is an easy-to-use Music Player Daemon (MPD) client
 for Qt4."
-REQUIRES="mpd"
+#REQUIRES="mpd" # can be used remotely
 HOMEPAGE="http://bitcheese.net/wiki/QMPDClient/"
 SRC_URI="http://dump.bitcheese.net/files/${NAME}-${VERSION}.tar.bz2"
 SRC_DIR=${NAME}
